@@ -36,6 +36,13 @@ while opcao != "0" :
         print(f"""
         Frase Tratada......: {resultado['sem_espaços']}
         Quantidade de palavras.....: {resultado['quantidade_palavras']}
-        Quantidade de caracteres...: {resultado['quantidade_caracteres']}
-        """)
+        Quantidade de caracteres...: {resultado['quantidade_caracteres']}  
+        """) #dificuldade no entendimento fuction
         input('\nPressione a tecla enter para voltar ao menu')
+    elif opcao == "4":
+        frase = input("Frase: ")
+        antiga_palavra = input ("Palavra a substitui: ")
+        new_palavra = input ("Nova Palavra: ")
+        modificacao = subalgoritmos.substituir_palavra(frase, antiga_palavra, new_palavra)
+        print(f"Frase modificada com sucesso: {modificacao}")
+        input("\n Pressione a tecla Enter para voltar ao menu") 

@@ -14,3 +14,5 @@ def analisar_frase(frase: str) -> dict:
         "quantidade_palavras": qtd_palavras,
         "quantidade_caracteres": qnt_caracteres
     }
+def substituir_palavra(frase: str, antiga: str, nova: str) -> str:
+    return frase.replace(antiga, nova)
