@@ -46,3 +46,16 @@ while opcao != "0" :
         modificacao = subalgoritmos.substituir_palavra(frase, antiga_palavra, new_palavra)
         print(f"Frase modificada com sucesso: {modificacao}")
         input("\n Pressione a tecla Enter para voltar ao menu") 
+    elif opcao == "5":
+        new_itens = input("Itens: ")
+
+        lista_itens = [item.strip() for item in new_itens.split(",")]
+        i_inicial = int(input("Indice Inical: "))
+        i_final = int(input("Indice Final: "))
+
+        resultado = subalgoritmos.filtrar_intervalo(lista_itens, i_inicial, i_final)
+        print(f"Lista Recortada: {resultado}")
+        input("\nPressione Enter para voltar ao menu")
+    else :
+        print("Fechando Programa...")
+    

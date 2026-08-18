@@ -16,3 +16,5 @@ def analisar_frase(frase: str) -> dict:
     }
 def substituir_palavra(frase: str, antiga: str, nova: str) -> str:
     return frase.replace(antiga, nova)
+def filtrar_intervalo(lista: list, inicio: int, fim: int) -> list:
+    return lista[inicio:fim]
