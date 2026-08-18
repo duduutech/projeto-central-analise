@@ -26,3 +26,9 @@ while opcao != "0" :
        """ )
         input("\n Presione Enter para voltar ao menu ")
 
+    elif opcao == "2":
+        entrada_text = input("Digite um texto: ")
+        text_invert = subalgoritmos.inverter_texto(entrada_text)
+        print(f"\nTexto Invertido: {text_invert}")
+        input("\nPrecione enter para voltar ao menu")
+
